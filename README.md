@@ -4,7 +4,7 @@ A simple custom hook for React.
 I wanted a simple component with no visual components attached for my projects. I needed the timer to be precise and to continue counting even if the window loses focus.
 
 It can easely be used in a functional component, like so:
-
+```javascript
 import React, { useState, useEffect } from "react";
 import { useTimer } from "./useTimer";
 
@@ -31,3 +31,4 @@ export default function App() {
     </div>
   );
 }
+```
