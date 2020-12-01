@@ -21,6 +21,7 @@ export function useTimer() {
 
   const startTimer = () => {
     if (!state.isOn) {
+      console.log("Starting timer");
       setState({
         time: 0,
         isOn: true
@@ -30,7 +31,6 @@ export function useTimer() {
   };
 
   const getTime = () => {
-    console.log(Date.now() - startTime, state, startTime);
     return Date.now() - startTime;
   };
 
